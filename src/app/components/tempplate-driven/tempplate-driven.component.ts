@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-tempplate-driven',
@@ -10,6 +11,10 @@ export class TempplateDrivenComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(myForm: NgForm){
+    console.log(myForm)
   }
 
 }
