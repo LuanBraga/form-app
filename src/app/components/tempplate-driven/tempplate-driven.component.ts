@@ -8,13 +8,21 @@ import { NgForm } from '@angular/forms';
 })
 export class TempplateDrivenComponent implements OnInit {
 
+  informacoes = {
+    nome: '',
+    idade: 0,
+    email: '',
+    confirmaEmail: ''
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onSubmit(myForm: NgForm){
-    console.log(myForm)
+  onSubmit(myForm){
+    console.log(myForm);
+    console.log(this.informacoes);
   }
 
 }
