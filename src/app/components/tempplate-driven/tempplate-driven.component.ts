@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
@@ -15,7 +16,9 @@ export class TempplateDrivenComponent implements OnInit {
     confirmaEmail: ''
   }
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
   ngOnInit(): void {
   }
@@ -24,5 +27,6 @@ export class TempplateDrivenComponent implements OnInit {
     console.log(myForm);
     console.log(this.informacoes);
   }
+
 
 }
