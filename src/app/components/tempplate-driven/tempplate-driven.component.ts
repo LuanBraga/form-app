@@ -16,7 +16,7 @@ export class TempplateDrivenComponent implements OnInit {
     idade: 0,
     email: '',
     confirmaEmail: ''
-  }
+  };
 
   constructor(
     private http: HttpClient
@@ -25,7 +25,7 @@ export class TempplateDrivenComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(myForm){
+  onSubmit(myForm: NgForm){
     console.log(myForm);
     console.log(this.informacoes);
   }
