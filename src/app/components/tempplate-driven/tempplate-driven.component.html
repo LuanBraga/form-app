@@ -1,22 +1,22 @@
 <form #myForm="ngForm" (submit)="onSubmit(myForm)">
     <label>
         <p>Nome</p>
-        <input type="text" name="nome" ngModel>
+        <input type="text" name="nome" [(ngModel)]="informacoes.nome">
     </label>
 
     <label>
         <p>Idade</p>
-        <input type="number" name="idade" ngModel>
+        <input type="number" name="idade" [(ngModel)]="informacoes.idade">
     </label>
 
     <label>
         <p>E-mail</p>
-        <input type="email" name="email" ngModel>
+        <input type="email" name="email" [(ngModel)]="informacoes.email">
     </label>
 
     <label>
         <p>Confirma E-mail</p>
-        <input type="email" name="confirmaEmail" ngModel>
+        <input type="email" name="confirmaEmail" [(ngModel)]="informacoes.confirmaEmail">
     </label>
 
     <button type="submit">Enviar</button>
